@@ -5,31 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
+
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { color: white; font-size: 11px; text-align: center; }
+    .attribution a { color: white; }
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <div class="bg-images">
+    <img id="bg-circle-top" src="images/bg-pattern-top.svg" alt="">
+    <img id="bg-circle-bottom" src="images/bg-pattern-bottom.svg" alt="">
+  </div>
 
-  80K
-  Followers
+  <div class="content-card">
+    <img id="card-img" src="images/bg-pattern-card.svg" alt="">
 
-  803K
-  Likes
+    <div class="content-1">
+      <img id="user-img" src="images/image-victor.jpg" alt="user image">
+      <p><span id='name'>Victor Crest</span> <span id='age'>26</span></p>
+      <p>London</p>
+    </div>
 
-  1.4K
-  Photos
+    <div class="content-2">
+      <div class="content-col">
+        <p class='num'>80K</p>
+        <p class='unit'>Followers</p>
+      </div>
+      <div class="content-col">
+        <p class='num'>803K</p>
+        <p class='unit'>Likes</p>
+      </div>
+      <div class="content-col">
+        <p class='num'>1.4K</p>
+        <p class='unit'>Photos</p>
+      </div>
+    </div>
+  </div>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
   </div>
 </body>
 </html>
